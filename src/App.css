@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600&display=swap');
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100px;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 300;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET CSS */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 180%;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s all;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+    color: black;
+    background: -webkit-linear-gradient(
+        #6666cc,
+        #ff00ff,
+        #ff6600
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    background: -webkit-linear-gradient(
+        #6666cc,
+        #ff00ff,
+        #ff6600
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 940px;
+    }
+    
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    
+    footer p {
+        font-size: 18px;
+    }
+}

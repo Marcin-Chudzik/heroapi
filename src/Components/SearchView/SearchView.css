@@ -1,0 +1,15 @@
+.featured__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .featured__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

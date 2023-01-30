@@ -1,0 +1,68 @@
+.hero__simplified {
+    padding: 20px 10px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.5);
+    transition: .3s all;
+}
+
+.hero__simplified:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 10px 8px rgba(128, 128, 128, 0.7);
+}
+
+.hero__simplified__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__simplified h2 {
+    font-size: 24px;
+}
+
+.hero__simplified__info img {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+
+.hero__simplified__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .hero__simplified {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%
+    }
+
+    .hero__simplified__stats {
+        padding: 29px 0 5px 0;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .hero__simplified {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .hero__simplified {
+        width: calc(100% / 3 - 20px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured__hero__stats {
+        padding: 10px;
+    }
+}
